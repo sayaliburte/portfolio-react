@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { experiences } from "../../data/constants";
 import Timeline from '@mui/lab/Timeline';
 import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
+import ExperienceCard from "../Cards/ExperienceCard";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,6 +11,7 @@ const Container = styled.div`
   justify-content: center;
   position: relative;
   z-index: 1;
+  padding:10px 0px;
 `;
 
 const Wrapper = styled.div`
@@ -75,7 +77,9 @@ const Experience = () => {
                   {index!==experiences.length-1 && <TimelineConnector />}
               
               </TimelineSeparator>
-              <TimelineContent sx={{py:"12px",px:2}}></TimelineContent>
+              <TimelineContent sx={{py:"12px",px:2}}>
+                <ExperienceCard experience={experience}></ExperienceCard>
+              </TimelineContent>
             </TimelineItem>
           ))
 }</Timeline>

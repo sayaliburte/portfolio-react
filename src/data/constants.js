@@ -111,21 +111,13 @@ export const skills = [
 ];
 
 export const experiences = [
+ 
   {
     id: 0,
-    role: "Internship",
-    company: "Softebizz Technologies",
-    date: "Feb 2021 – Aug 2021",
-    desc: "1) Worked as a Frontend UI React Developer on the Project Management System (PMT) project and integrated a REST API to handle data communication.",
-    skills: ["React", "Angular"],
-    doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
-  },
-  {
-    id: 1,
     role: "Software Developer",
     company: "Connecting dots Infotech",
     date: "Sept 2022 – May 2023",
-    desc: "As a software developer worked on responsive web applications  built using Angular",
+    desc: "As a software developer worked on responsive web applications using Angular and used Angular Material library for consistent UIs. Implemented authentication, managed asynchronous data, and added routing, Created reusable components, and also integrated payment gateways apis. ",
     skills: [
       "Angular",
       "Html",
@@ -133,6 +125,15 @@ export const experiences = [
       "Angular Material",
       "TS",
     ],
+    
+  },
+  {
+    id: 1,
+    role: "Internship",
+    company: "Softebizz Technologies",
+    date: "Feb 2021 – Aug 2021",
+    desc: "Worked as a Frontend UI React Developer on the Project Management System (PMT) project and integrated a REST API to handle data communication.",
+    skills: ["React", "Angular"],
     
   },
   
