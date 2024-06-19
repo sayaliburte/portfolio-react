@@ -5,7 +5,7 @@ export const Bio = {
     "Highly motivated Frontend Developer with 8 months of professional experience in creating engaging and interactive web applications using Angular. Additionally, completed 6 months of internship experience in React development. Experience in Angular, TypeScript, HTML, CSS, SCSS. My ultimate goal is to continuously evolve and excel as a Full Stack Developer.",
   github: "https://github.com/sayaliburte",
   resume:
-    "https://drive.google.com/file/d/1_9Wn1_EIePVhH9O8Y4wAnNWkNj11sY_U/view",
+    "https://drive.google.com/file/d/1hTYVmyl6cj4MnAoARhA5qtzOHtOV6JEX/view",
   linkedin: "https://www.linkedin.com/in/sayali-burte/",
 };
 
@@ -111,21 +111,13 @@ export const skills = [
 ];
 
 export const experiences = [
- 
   {
     id: 0,
     role: "Software Developer",
     company: "Connecting dots Infotech",
     date: "Sept 2022 – May 2023",
     desc: "As a software developer worked on responsive web applications using Angular and used Angular Material library for consistent UIs. Implemented authentication, managed asynchronous data, and added routing, Created reusable components, and also integrated payment gateways apis. ",
-    skills: [
-      "Angular",
-      "Html",
-      "SCSS",
-      "Angular Material",
-      "TS",
-    ],
-    
+    skills: ["Angular", "Html", "SCSS", "Angular Material", "TS"],
   },
   {
     id: 1,
@@ -134,9 +126,7 @@ export const experiences = [
     date: "Feb 2021 – Aug 2021",
     desc: "Worked as a Frontend UI React Developer on the Project Management System (PMT) project and integrated a REST API to handle data communication.",
     skills: ["React", "Angular"],
-    
   },
-  
 ];
 
 export const education = [
@@ -166,5 +156,29 @@ export const education = [
     grade: "92.3%",
     desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
     degree: "ICSC(X), Science with Computer",
+  },
+];
+
+export const projects = [
+  {
+    id: 0,
+    name:"E-Residential App",
+    role: "React Project",
+    desc: "This custom app was designed specifically for a particular society, offering comprehensive online management of all their activities. The app provides various functionalities such as including photo capturing, notification sending, facilitating communication between various society members, etc.",
+    skills: ["React Native", "Firebase", "Expo"],
+  },
+  {
+    id: 1,
+    name:"Online Dairy Product Ordering System",
+    role: "PHP Project",
+    desc: "This  specialized system is made for dairy owners, offering a online platform for customers to order dairy products. It brings immense benefits to both the owner and the customers by facilitating smooth and convenient online ordering processes. Moreover, the system automatically generates detailed receipts. With this efficient system in place, dairy owners can enhance their operations while customers gets satisfying experience when ordering their desired dairy products.",
+    skills: ["PHP", "Bootstrap-4"],
+  },
+  {
+    id: 2,
+    name:"Health Manager Project",
+    role: "Java Project",
+    desc: "The system was developed with the primary objective of securely storing doctors' prescriptions and test reports for individual patients. Additionally, it offers a convenient feature where patients receive timely reminders one day before their scheduled tests, etc. Thus,resulting in a more efficient and patient-centric healthcare experience",
+    skills: ["AWT Swing", "MySQL"],
   },
 ];

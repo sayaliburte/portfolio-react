@@ -5,22 +5,35 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
   position: relative;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 12px 16px;
+  padding: 12px 14px;
   overflow:hidden;
   transition:all 0.3s ease-in-out;
-  &:hover{
+
+  &:hover {
     box-shadow:0px 0px 20px rgba(0,0,0,0.2);
-    transform:translateY(-5px);
+    transform:translateY(-10px);
   }
 
-  @media(max-width:768px){
+  @media only screen and (min-width: 375px) and (max-width: 430px) {
+	padding:10px;
+    gap:10px;
+    width:300px;
+   
+}
+   @media only screen and (min-width: 600px) and (max-width: 768px){
+   padding:10px;
+    gap:8px;
+    width:500px;
+   }
+
+    @media (max-width:321px){
     padding:10px;
     gap:8px;
-    width:280px;
+    width:240px;
   }
   border:0.1px solid #306ee8;
   box-shadow:rgba(23.92,230,0.15) 0px;4px 24px;
@@ -94,8 +107,8 @@ const Skill = styled.div`
   font-size: 15px;
   font-weight: 400px;
   color: ${({ theme }) => theme.text_primary + 99};
-  @media(max-width:768px){
-  font-size:12px
+  @media (max-width: 768px) {
+    font-size: 12px;
   }
 `;
 const ExperienceCard = ({ experience }) => {

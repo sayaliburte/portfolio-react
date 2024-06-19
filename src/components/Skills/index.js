@@ -9,6 +9,13 @@ const Skills = () => {
     justify-content: center;
     position: relative;
     z-index: 1;
+    padding:70px 0px;
+
+     @media (max-width: 768px) {
+     padding:70px 0px;
+    
+    }
+
   `;
   const Wrapper = styled.div`
     max-width: 1100px;
@@ -28,10 +35,7 @@ const Skills = () => {
     margin-top: 20px;
     color: ${({ theme }) => theme.text_primary};
 
-    @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size3: 32px;
-    }
+  
   `;
 
   const Desc = styled.div`
@@ -39,8 +43,9 @@ const Skills = () => {
     max-width: 600px;
     text-align: center;
     color: ${({ theme }) => theme.text_secondary};
+
     @media (max-width: 768px) {
-      font-size: 16px;
+      font-size: 14px;
     }
   `;
 
@@ -48,6 +53,7 @@ const Skills = () => {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+ 
   margin-top: 30px;
   gap: 30px;
   justify-content: center;
@@ -55,7 +61,7 @@ const Skills = () => {
 
 const Skill = styled.div`
   width: 100%;
-  max-width: 400px;
+     max-width: 400px;
   background: ${({ theme }) => theme.card};
   border: 0.1px solid #854CE6;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
@@ -69,7 +75,10 @@ const Skill = styled.div`
     max-width: 330px;
     padding: 10px 36px;
   }
-
+@media (max-width: 321px) {
+    max-width: 250px;
+    padding: 10px 36px;
+  }
 
 `
 
@@ -79,6 +88,9 @@ const SkillTitle = styled.h2`
   color: ${({ theme }) => theme.text_secondary};
   margin-bottom: 20px;
   text-align: center;
+  @media (max-width: 321px) {
+    font-size: 25px;
+  }
 `
 
 const SkillList = styled.div`
@@ -115,7 +127,7 @@ const SkillImage = styled.img`
   height: 24px;
 `
   return (
-    <Container id="skills ">
+    <Container id="skills">
       <Wrapper>
         <Title>Skills</Title>
         <Desc>Mentioned below are some of my skills</Desc>

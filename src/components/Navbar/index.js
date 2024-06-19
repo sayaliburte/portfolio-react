@@ -138,7 +138,7 @@ const GithubButton = styled.a`
   }
 `;
 
-const MobileLink = styled(LinkR)`
+const MobileLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
